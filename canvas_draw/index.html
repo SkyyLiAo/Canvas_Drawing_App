@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html Lang="en"> 
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width", initial-scale=1.0 />
+        <!--sets the width of the page to follow the screen-width of the device-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <!--allow users to choose version of Internet-->
+        <link rel="stylesheet" href="./style.css" />
+        <script src="app.js" type="module" defer></script> 
+        <title>Canvas</title>
+    </head>
+    <body>
+        <div class = "toolbox left">
+            <div class="group command">
+                <div class="item" data-command="undo" title="Undo">
+                    <img src ="images/undo_icon.png" />
+                </div>
+                <div class="item" data-command="download" title="Download">
+                    <img src ="images/download_icon.png" />
+                </div>
+            </div>
+        
+            <div class="group tools">
+                <div class="item active" data-tool="pencil" title="Pencil">
+                    <img src ="images/pencil_icon.png" />
+                </div>
+                <div class="item" data-tool="eraser" title="Eraser">
+                    <img src ="images/eraser_icon.png" />
+                </div>
+
+            </div>
+            <div class="group linewidth" style="display:block;">
+                <div class="item active" data-line-width="1" title="1 pixel">
+                    <div class="linewidth" style="width:1px; height:1px"></div>
+                </div>
+                <div class="item" data-line-width="3" title="3 pixel">
+                    <div class="linewidth" style="width:3px; height:3px"></div>
+                </div>
+                <div class="item" data-line-width="5" title="5 pixel">
+                    <div class="linewidth" style="width:5px; height:5px"></div>
+                </div>
+            </div>
+        </div>
+
+        <canvas id="canvas" width="640" height="480"></canvas>
+
+        <div class = "toolbox right">
+            <div class="group colors">
+                <div class="item active" data-color="#000000"> <!--active: set default-->
+                    <div class="swatch" style="background-color:#000000"></div>
+                </div>
+                <div class="item" data-color="#FFFFFF">
+                    <div class="swatch" style="background-color:#FFFFFF"></div>
+                </div>
+                <div class="item" data-color="#FF0000">
+                    <div class="swatch" style="background-color:#FF0000"></div>
+                </div>
+                <div class="item" data-color="#FF4500">
+                    <div class="swatch" style="background-color:#FF4500"></div>
+                </div>
+                <div class="item" data-color="#FFFF00">
+                    <div class="swatch" style="background-color:#FFFF00"></div>
+                </div>
+                <div class="item" data-color="#00ff00">
+                    <div class="swatch" style="background-color:#00ff00"></div>
+                </div>
+                <div class="item" data-color="#00ffff">
+                    <div class="swatch" style="background-color:#00ffff"></div>
+                </div>
+                <div class="item" data-color="#0000FF">
+                    <div class="swatch" style="background-color:#0000FF"></div>
+                </div>
+                <div class="item" data-color="#9932CC">
+                    <div class="swatch" style="background-color:#9932CC"></div>
+                </div>
+
+            </div>
+        </div>
+
+        
+    </body>
+</html>
